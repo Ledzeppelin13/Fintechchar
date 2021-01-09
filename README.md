@@ -233,13 +233,13 @@ truffle test
 ```
 
 
-## 2.รูปแบบเว็บไซต์ ( User Interface :UI) เพื่อใช้เชื่อมต่อกับผู้ใช้
+## 2.รูปแบบเว็บไซต์ ( User Interface :UI) ซึ่งเป็น front end เพื่อใช้เชื่อมต่อกับผู้ใช้
 รูปลักษณ์ของเว็บแอพพลิเคชั่นที่ออกแบบมีลักษณ์ ดังนี้ 
 
 [![1.png](https://i.postimg.cc/ncX8rf3L/1.png)](https://postimg.cc/RNxppy5r)
 [![2.png](https://i.postimg.cc/wB0FD7vY/2.png)](https://postimg.cc/t1nhjRWB)
 
-รูปลักษณ์เป็นการแก้ไขไฟล์ index.html ,app.js และ Kids.json โดยให้เปิด Visual Studio Code ไปที่ ```src``` โดยเริ่มที่ front end คือไฟล์ index.html โดยให้มีโค้ด ดังนี้ 
+รูปลักษณ์เป็นการแก้ไขไฟล์ index.html ,app.js และ Kids.json โดยให้เปิด Visual Studio Code ไปที่ ```src/index.html``` โดยเริ่มที่ front end คือไฟล์ index.html โดยให้มีโค้ด ดังนี้ 
 ```<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -316,7 +316,7 @@ truffle test
 ```
 
 ## 3. สร้าง Backend ที่สามารถเชื่อมต่อกับ Smart Contract
-แก้ไขไฟล์ ```src/js/app.js``` ให้มีโค้ดดังนี้
+.ให้แก้ไขไฟล์ ```src/js/app.js``` ใน visual studio code ให้มีโค้ดดังนี้
 
 ```
 App = {
@@ -325,19 +325,19 @@ App = {
 
   init: async function() {
     // Load pets.
-    $.getJSON('../pets.json', function(data) {
-      var petsRow = $('#petsRow');
-      var petTemplate = $('#petTemplate');
+    $.getJSON('../Kids.json', function(data) {
+      var kidsRow = $('#kidsRow');
+      var kidTemplate = $('#kidTemplate');
 
       for (i = 0; i < data.length; i ++) {
-        petTemplate.find('.panel-title').text(data[i].name);
-        petTemplate.find('img').attr('src', data[i].picture);
-        petTemplate.find('.pet-breed').text(data[i].breed);
-        petTemplate.find('.pet-age').text(data[i].age);
-        petTemplate.find('.pet-location').text(data[i].location);
-        petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+        kidTemplate.find('.panel-title').text(data[i].name);
+        kidTemplate.find('img').attr('src', data[i].picture);
+        kidTemplate.find('.pet-breed').text(data[i].Nationality);
+        kidTemplate.find('.pet-age').text(data[i].age);
+        kidTemplate.find('.pet-location').text(data[i].location);
+        kidTemplate.find('.btn-adopt').attr('data-id', data[i].id);
 
-        petsRow.append(petTemplate.html());
+        kidsRow.append(kidTemplate.html());
       }
     });
 
@@ -398,7 +398,7 @@ App = {
     }).then(function (adopters) {
       for (i = 0; i < adopters.length; i++) {
         if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
-          $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
+          $('.panel-pet').eq(i).find('button').text("อุปการะแล้ว").attr('disabled', true);
         }
       }
     }).catch(function (err) {
@@ -409,7 +409,7 @@ App = {
   handleAdopt: function(event) {
     event.preventDefault();
 
-    var petId = parseInt($(event.target).data('id'));
+    var kidId = parseInt($(event.target).data('id'));
 
     var adoptionInstance;
 
@@ -424,7 +424,7 @@ App = {
         adoptionInstance = instance;
 
         // Execute adopt as a transaction by sending account
-        return adoptionInstance.adopt(petId, { from: account });
+        return adoptionInstance.adopt(kidId, { from: account });
       }).then(function (result) {
         return App.markAdopted();
       }).catch(function (err) {
@@ -440,6 +440,7 @@ $(function() {
     App.init();
   });
 });
+
 
 ```
 
