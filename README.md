@@ -316,7 +316,7 @@ truffle test
 ```
 
 ## 3. สร้าง Backend ที่สามารถเชื่อมต่อกับ Smart Contract
-.ให้แก้ไขไฟล์ ```src/js/app.js``` ใน visual studio code ให้มีโค้ดดังนี้
+### 3.1 ให้แก้ไขไฟล์ ```src/js/app.js``` ใน visual studio code ให้มีโค้ดดังนี้
 
 ```
 App = {
@@ -443,7 +443,138 @@ $(function() {
 
 
 ```
-
+### 3.2 สร้างไฟล์ .json ซึ่งเป็นฐานข้อมูลของเด็กกำพร้าทั้ง 16 คน โดยไปที่โฟลเดอร์ src แล้วสร้าง New file ชื่อ Kids.json โดยให้มีโค้ด ดังต่อไปนี้
+```[
+    {
+      "id": 0,
+      "name": "ยืนยง โอภากุล",
+      "picture": "images/0.jpg",
+      "age": 3,
+      "Nationality": "จีน",
+      "location": "นครพนม"
+    },
+    {
+      "id": 1,
+      "name": "ทาโนชน์ แหวนงาม",
+      "picture": "images/1.jpg",
+      "age": 45,
+      "Nationality": "คริปตอน",
+      "location": "สำเพ็ง"
+    },
+    {
+      "id": 2,
+      "name": "นาตาชา เปลี่ยนวิถี",
+      "picture": "images/2.jpg",
+      "age": 35,
+      "Nationality": "ไทย",
+      "location": "บิ๊กซีดอนเมือง"
+    },
+    {
+      "id": 3,
+      "name": "พ่อคล้าว แม่ทองกวาว",
+      "picture": "images/3.jpg",
+      "age": 60,
+      "Nationality": "กัมพูชา",
+      "location": "ตลาดกุ้งสมุทรสาคร"
+    },
+    {
+      "id": 4,
+      "name": "เบบี้ โยดา",
+      "picture": "images/4.jpg",
+      "age": 2,
+      "Nationality": "โรฮิงญา",
+      "location": "สวนรถไฟ"
+    },
+    {
+      "id": 5,
+      "name": "บรูซ เข้าเวร",
+      "picture": "images/5.jpg",
+      "age": 45,
+      "Nationality": "ไทลื้อ",
+      "location": "วิลล่าอารีย์"
+    },
+    {
+      "id": 6,
+      "name": "ลีวาย สายสมร",
+      "picture": "images/6.jpg",
+      "age": 32,
+      "Nationality": "มองโกล",
+      "location": "บาร์บีคิวพลาซ่า"
+    },
+    {
+      "id": 7,
+      "name": "เพนนีไวซ์ กัลยาณมิตร",
+      "picture": "images/7.jpg",
+      "age": 103,
+      "Nationality": "ยูเครน",
+      "location": "อ.เต่างอย สกลนคร"
+    },
+    {
+      "id": 8,
+      "name": "ปู พงษ์สิทธิ์ คำหล้า",
+      "picture": "images/8.jpg",
+      "age": 12,
+      "Nationality": "รัสเซีย",
+      "location": "อ.ธาตุพนม นครพนม"
+    },
+    {
+      "id": 9,
+      "name": "เลอา สกายวอล์คกิ้ง",
+      "picture": "images/9.jpg",
+      "age": 18,
+      "Nationality": "ซูดาน",
+      "location": "สถานเสาวภา"
+    },
+    {
+      "id": 10,
+      "name": "วันเดอร์วูแมน",
+      "picture": "images/10.jpg",
+      "age": 105,
+      "Nationality": "อะเมซอน",
+      "location": "เชียงคาน จ.เลย"
+    },
+    {
+      "id": 11,
+      "name": "ออพติมัส พลายงาม",
+      "picture": "images/11.jpg",
+      "age": 1200,
+      "Nationality": "ไซเบอร์ตรอน",
+      "location": "เซเว่นข้างวัดพระศรี"
+    },
+    {
+      "id": 12,
+      "name": "อาจารย์หมูแว่น",
+      "picture": "images/12.jpg",
+      "age": 8,
+      "Nationality": "หมู",
+      "location": "เล้าหมู"
+    },
+    {
+      "id": 13,
+      "name": "สิทธิชัย หยุ่น",
+      "picture": "images/13.jpg",
+      "age": 16,
+      "Nationality": "อิตาลี",
+      "location": "สวนหย่อมข้างพารากอน"
+    },
+    {
+      "id": 14,
+      "name": "อีลอน ไตรมาส",
+      "picture": "images/14.jpg",
+      "age": 52,
+      "Nationality": "สิงคโปร์",
+      "location": "อเมริกาฬสินธุ์"
+    },
+    {
+      "id": 15,
+      "name": "ซาโตชิ นาฬิกาโกโก้",
+      "picture": "images/15.jpg",
+      "age": 50,
+      "Nationality": "ญี่ปุ่น",
+      "location": "โรงเบียร์เยอรมัน เลียบด่วน"
+    }
+  ]
+  ```
 ## 4. ติดตั้ง MetaMask
 - ติดตั้ง MetaMask ที่บราวเซอร์ Firefox
 - เมื่อเริ่มใช้งาน MetaMask จะได้ดังรูป 
