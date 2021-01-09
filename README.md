@@ -86,7 +86,7 @@ module.exports = function(deployer) {
 ```
 ดาวน์โหลด Ganache จาก https://www.trufflesuite.com/ganache เมื่อดาวน์โหลดแล้วใช้เมาส์ดับเบิลคลิกที่ชื่อไฟล์ 
 
-[![ganache1.png](https://i.postimg.cc/W176MQyR/ganache1.png)](https://postimg.cc/NK5HtPYb)
+[![ganache1.png](https://i.postimg.cc/bvqfzCdY/ganache1.png)](https://postimg.cc/pmc6CBD3)
 
 คลิกที่ New Workspace เพื่อตั้งชื่อ ในที่นี้จะตั้งชื่อตามวิชาคือ NF507 จากนั้นคลิก Save Workspace
 [![ganache2.png](https://i.postimg.cc/fRkm9JYd/ganache2.png)](https://postimg.cc/FY5YtFWF)
