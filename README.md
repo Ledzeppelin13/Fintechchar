@@ -44,7 +44,7 @@ truffle unbox pet-shop
 ## 2. สร้าง Smart Contract
 ### 2.1. Adoption Smart Contract
 
-ใช้ Visual Studio Code นำเคอร์เซอร์วางเหนือโฟลเดอร์ contracts แล้วคลิกขวาไปที่ New file สร้างไฟล์ชื่อ Adoption.sol โดยมีโค้ดดังนี้
+ใช้ Visual Studio Code นำเคอร์เซอร์วางเหนือโฟลเดอร์ ```contracts``` แล้วคลิกขวาไปที่ ```New file``` สร้างไฟล์ชื่อ ```Adoption.sol``` โดยมีโค้ดดังนี้
 
 ```
 pragma solidity ^0.5.16;
@@ -75,7 +75,7 @@ truffle compile
 โปรดตรวจสอบว่า สามารถคอมไพล์ได้สำเร็จก่อนทำในขั้นตอนต่อไป โดยจะมีข้อความเช่นนี้หรือคล้ายกัน ปรากฎขึ้นมา
 [![compile.png](https://i.postimg.cc/V6nxgsPs/compile.png)](https://postimg.cc/4742Ng3j)
 
-ใช้ Visual Studio Code นำเคอร์เซอร์วางเหนือโฟลเดอร์ migrations แล้วคลิกขวาไปที่ New file แล้วสร้างไฟล์ชื่อ 2_deploy_contracts.js ในไดเร็กทอรี แล้วเขียนโค้ดดังนี้
+ใช้ Visual Studio Code นำเคอร์เซอร์วางเหนือโฟลเดอร์ ```migrations``` แล้วคลิกขวาไปที่ ```New file``` แล้วสร้างไฟล์ชื่อ ```2_deploy_contracts.js``` แล้วเขียนโค้ดดังนี้
 
 ```
 var Adoption = artifacts.require("Adoption");
@@ -88,7 +88,7 @@ module.exports = function(deployer) {
 
 [![ganache1.png](https://i.postimg.cc/bvqfzCdY/ganache1.png)](https://postimg.cc/pmc6CBD3)
 
-คลิกที่ New Workspace เพื่อตั้งชื่อ ในที่นี้จะตั้งชื่อตามวิชาคือ NF507 จากนั้นคลิก Save Workspace
+คลิกที่  ```New Workspace```เพื่อตั้งชื่อ ในที่นี้จะตั้งชื่อตามวิชาคือ NF507 จากนั้นคลิก ```Save Workspace```
 [![ganache2.png](https://i.postimg.cc/Y91XhkPJ/ganache2.png)](https://postimg.cc/zbGwQm8j)
 
 
@@ -100,7 +100,7 @@ module.exports = function(deployer) {
 ```
 truffle migrate
 ```
-หาก migrate ผ่าน จะปรากฎข้อความลักษณะดังกล่าว ซึ่งเป็นการอ่าน ไฟล์ Adoption.sol,1_initial_migration.js และ 2_deploy_contracts.js ซึ่งระบบจะนำข้อมูลไปไว้บนบล็อคเชน และคำนวณค่า gas ซึ่งมีหน่วยเป็น wei 
+หาก migrate ผ่าน จะปรากฎข้อความลักษณะดังกล่าว ซึ่งเป็นการอ่าน ไฟล์ ```Adoption.sol,1_initial_migration.js```และ```2_deploy_contracts.js```ซึ่งระบบจะนำข้อมูลไปไว้บนบล็อคเชน และคำนวณค่า gas ซึ่งมีหน่วยเป็น wei 
 ```
 Compiling your contracts...
 ===========================
