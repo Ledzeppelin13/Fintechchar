@@ -39,7 +39,7 @@ truffle unbox pet-shop
 - truffle-config.js: คือไฟล์ที่ใช้ในการกำหนดค่าของโปรเจ็ค
 
 1.2 ที่ Visual studio code ให้เปิดโฟลเดอร์ที่เก็บไฟล์ที่ดาวน์โหลดจาก truffle framework โดยไปที่ File/open folder/pet-shop จากนั้นกด Select folder โฟลเดอร์ต่างๆ จะปรากฎที่ Explorer ตามภาพ  
-[![Openfolder.png](https://i.postimg.cc/x88YjDbK/Openfolder.png)](https://postimg.cc/BLrRNzp6)
+[![Openfolder.png](https://i.postimg.cc/Kj2HN4LG/Openfolder.png)](https://postimg.cc/Q9fmN80w)
 
 ## 2. สร้าง Smart Contract
 ### 2.1. Adoption Smart Contract
