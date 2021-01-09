@@ -92,14 +92,10 @@ module.exports = function(deployer) {
 [![ganache2.png](https://i.postimg.cc/fRkm9JYd/ganache2.png)](https://postimg.cc/FY5YtFWF)
 
 
+จะปรากฎ การแสดง account บน ganache ต่างๆ ตามภาพ
+[![ganache3.png](https://i.postimg.cc/9MNrVBNN/ganache3.png)](https://postimg.cc/YGYpzQ71)
 
-![Workspace](img/ganache_02.png)
-
-ผลลัพธ์ที่ได้เป็นดังรูป โดย Ganache สร้างบัญชีให้ 10 บัญชี แต่ละบัญชีมี 100 ETH โดยดีฟอล์ต
-
-![GanacheDefault](img/ganache_03.png)
-
-เมื่อ Ganache ทำงานได้ดังรูปข้างต้น ขั้นตอนต่อไปคือการ migrate ทำได้โดยใช้คำสั่งต่อไปนี้
+ในขั้นตอนต่อไปให้ทำการ migrate Smart contract ไปอยู่บน personal blockchain ซึ่งในที่นี้คือ ganache ทำได้โดยใช้คำสั่งใน terminal ดังต่อไปนี้
 
 ```
 truffle migrate
