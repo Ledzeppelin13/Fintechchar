@@ -83,11 +83,14 @@ module.exports = function(deployer) {
   deployer.deploy(Adoption);
 };
 ```
-เปิดโปรแกรม Ganache โดยการใช้เมาส์ดับเบิลคลิกที่ชื่อไฟล์ จากนั้นคลิกที่ New Workspace ในกรณีที่ใช้งานครั้งแรก ครั้งต่อไปไม่จำเป็นต้องสร้าง Workspace ใหม่ทุกครั้ง
+ดาวน์โหลด Ganache แล้วใช้เมาส์ดับเบิลคลิกที่ชื่อไฟล์ 
 
-[![7.jpg](https://i.postimg.cc/Y0YYmW53/7.jpg)](https://postimg.cc/D4f898yJ)
+[![ganache1.png](https://i.postimg.cc/W176MQyR/ganache1.png)](https://postimg.cc/NK5HtPYb)
 
-ที่ Workspace Name ให้ตั้งชื่อเช่น NF507 แล้วคลิก Save Workspace
+จากนั้นคลิกที่ New Workspace ในที่นี้จะตั้งชื่อตามวิชาคือ NF507 จากนั้นคลิก Save Workspace
+[![ganache2.png](https://i.postimg.cc/VNRGkSwC/ganache2.png)](https://postimg.cc/mcPNdgtL)
+
+
 
 ![Workspace](img/ganache_02.png)
 
