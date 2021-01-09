@@ -15,18 +15,19 @@
         
 
 ## 1. กำหนดค่าสิ่งแวดล้อมของโปรเจคต์
-สร้างไดเร็กทอรีสำหรับบันทึกโปรเจ็คนี้ ซึ่งเนื่องจากนำต้นฉบับมาจาก truffle totorial จึงใช้ชื่อ pet-shop เหมือนกับที่ Truffle ตั้งไว้ โดยใช้คำสั่งดังต่อไปนี้
+สร้างไดเร็กทอรีสำหรับบันทึกโปรเจ็คนี้ ซึ่งเนื่องจากนำต้นฉบับมาจาก truffle totorial จึงใช้ชื่อ pet-shop เหมือนกับที่ Truffle ตั้งไว้ โดยเปิด Terminal ขึ้นมาและใช้คำสั่งดังต่อไปนี้
 
 ```
 mkdir pet-shop
 cd pet-shop
 ```
 
-ดาวน์โหลดโครงสร้างของโปรเจ็ค pet-shop ซึ่งมีอยู่ใน Truffle Framework โดยใช้คำสั่งต่อไปนี้
+ดาวน์โหลดโครงสร้างและไฟล์ต่างๆ ของโปรเจ็คต์ pet-shop จาก Truffle Framework โดยใช้คำสั่งต่อไปนี้ใน terminal
 
 ```
 truffle unbox pet-shop
 ```
+เครื่องจะทำการดาวน์โหลดไฟล์ลงมาไว้ในโฟลเดอร์ pet-shop ที่สร้างไว้ข้างต้น
 
 ทดลองใช้คำสั่ง ```ls -l``` เพื่อดูโครงสร้างของโปรเจ็ค สังเกตว่า มีไดเร็กทอรีและไฟล์ที่สำคัญต่อไปนี้
 
@@ -36,8 +37,8 @@ truffle unbox pet-shop
 - test: เป็นไดเร็กทอรีใช้ที่เก็บไฟล์ Solidity หรือ JavaScript ก็ได้ ที่ใช้เพื่อทดสอบ Smart Contracts
 - truffle-config.js: คือไฟล์ที่ใช้ในการกำหนดค่าของโปรเจ็ค
 
-## 1. สร้าง Smart Contract
-### 1.1. Adoption Smart Contract
+## 2. สร้าง Smart Contract
+### 2.1. Adoption Smart Contract
 
 ใช้ Visual Studio Code เพื่อสร้างไฟล์ชื่อ Adoption.sol ในไดเร็กทอรี contracts โดยมีโค้ดดังนี้
 
