@@ -89,11 +89,11 @@ module.exports = function(deployer) {
 [![ganache1.png](https://i.postimg.cc/bvqfzCdY/ganache1.png)](https://postimg.cc/pmc6CBD3)
 
 คลิกที่ New Workspace เพื่อตั้งชื่อ ในที่นี้จะตั้งชื่อตามวิชาคือ NF507 จากนั้นคลิก Save Workspace
-[![ganache2.png](https://i.postimg.cc/fRkm9JYd/ganache2.png)](https://postimg.cc/FY5YtFWF)
+[![ganache2.png](https://i.postimg.cc/Y91XhkPJ/ganache2.png)](https://postimg.cc/zbGwQm8j)
 
 
 จะปรากฎ การแสดง account บน ganache ต่างๆ ตามภาพ
-[![ganache3.png](https://i.postimg.cc/9MNrVBNN/ganache3.png)](https://postimg.cc/YGYpzQ71)
+[![ganache3.png](https://i.postimg.cc/85V489Cw/ganache3.png)](https://postimg.cc/f3BmmHm0)
 
 ในขั้นตอนต่อไปให้ทำการ migrate Smart contract ไปอยู่บน personal blockchain ซึ่งในที่นี้คือ ganache ทำได้โดยใช้คำสั่งใน terminal ดังต่อไปนี้
 
@@ -236,8 +236,8 @@ truffle test
 ## 2.รูปแบบเว็บไซต์ ( User Interface :UI) ซึ่งเป็น front end เพื่อใช้เชื่อมต่อกับผู้ใช้
 รูปลักษณ์ของเว็บแอพพลิเคชั่นที่ออกแบบมีลักษณ์ ดังนี้ 
 
-[![1.png](https://i.postimg.cc/ncX8rf3L/1.png)](https://postimg.cc/RNxppy5r)
-[![2.png](https://i.postimg.cc/wB0FD7vY/2.png)](https://postimg.cc/t1nhjRWB)
+[![1.png](https://i.postimg.cc/GpnG9Y1m/1.png)](https://postimg.cc/ZWjCMWRG)
+[![2.png](https://i.postimg.cc/gjj61H3N/2.png)](https://postimg.cc/MfkTQRPQ)
 
 รูปลักษณ์เป็นการแก้ไขไฟล์ index.html ,app.js และ Kids.json โดยให้เปิด Visual Studio Code ไปที่ ```src/index.html``` โดยเริ่มที่ front end คือไฟล์ index.html โดยให้มีโค้ด ดังนี้ 
 ```<!DOCTYPE html>
