@@ -83,7 +83,7 @@ module.exports = function(deployer) {
   deployer.deploy(Adoption);
 };
 ```
-ดาวน์โหลด Ganache แล้วใช้เมาส์ดับเบิลคลิกที่ชื่อไฟล์ 
+ดาวน์โหลด Ganache จาก https://www.trufflesuite.com/ganache เมื่อดาวน์โหลดแล้วใช้เมาส์ดับเบิลคลิกที่ชื่อไฟล์ 
 
 [![ganache1.png](https://i.postimg.cc/W176MQyR/ganache1.png)](https://postimg.cc/NK5HtPYb)
 
