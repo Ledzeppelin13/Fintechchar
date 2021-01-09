@@ -88,7 +88,7 @@ module.exports = function(deployer) {
 
 [![ganache1.png](https://i.postimg.cc/W176MQyR/ganache1.png)](https://postimg.cc/NK5HtPYb)
 
-จากนั้นคลิกที่ New Workspace ในที่นี้จะตั้งชื่อตามวิชาคือ NF507 จากนั้นคลิก Save Workspace
+คลิกที่ New Workspace เพื่อตั้งชื่อ ในที่นี้จะตั้งชื่อตามวิชาคือ NF507 จากนั้นคลิก Save Workspace
 [![ganache2.png](https://i.postimg.cc/fRkm9JYd/ganache2.png)](https://postimg.cc/FY5YtFWF)
 
 
