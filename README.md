@@ -579,7 +579,7 @@ $(function() {
 - ติดตั้ง MetaMask ที่บราวเซอร์ Firefox
 - เมื่อเริ่มใช้งาน MetaMask จะได้ดังรูป 
 
-![Metamaks_01](img/metamask_01.png)
+[![metamask-01.png](https://i.postimg.cc/ryPnhnk0/metamask-01.png)](https://postimg.cc/0r70jCrP)
 
 - คลิกที่ Get Started จะได้ผลลัพธ์ดังรูปด้านล่าง
 
