@@ -95,6 +95,7 @@ module.exports = function(deployer) {
 จะปรากฎ การแสดง account บน ganache ต่างๆ ตามภาพ
 [![ganache3.png](https://i.postimg.cc/85V489Cw/ganache3.png)](https://postimg.cc/f3BmmHm0)
 
+### 2.3 Migrate
 ในขั้นตอนต่อไปให้ทำการ migrate Smart contract ไปอยู่บน personal blockchain ซึ่งในที่นี้คือ ganache ทำได้โดยใช้คำสั่งใน terminal ดังต่อไปนี้
 
 ```
@@ -166,7 +167,7 @@ Summary
 > Total deployments:   2
 > Final cost:          0.0079154 ETH
 ```
-### 2.3. ทดสอบ Smart Contract
+### 2.4 ทดสอบ Smart Contract
 ไปที่ Visual Studio Code โดยนำเคอร์เซอร์ไปวางเหนือโฟลเดอร์ ```contracts ``` แล้วคลิกขวาไปที่ ```New file```แล้วสร้างไฟล์ชื่อ ```TestAdoption.sol``` โดยมีโค้ดดังนี้ 
 
 ```
@@ -234,12 +235,12 @@ truffle test
 
 
 ## 3.รูปแบบเว็บไซต์ ( User Interface :UI) ซึ่งเป็น front end เพื่อใช้เชื่อมต่อกับผู้ใช้
-รูปลักษณ์ของเว็บแอพพลิเคชั่นที่ออกแบบมีลักษณ์ ดังนี้ 
+รูปลักษณ์ของเว็บแอพพลิเคชั่นที่ออกแบบมีลักษณะ ดังนี้ 
 
 [![1.png](https://i.postimg.cc/GpnG9Y1m/1.png)](https://postimg.cc/ZWjCMWRG)
 [![2.png](https://i.postimg.cc/gjj61H3N/2.png)](https://postimg.cc/MfkTQRPQ)
 
-รูปลักษณ์เป็นการแก้ไขไฟล์```index.html``` , ```app.js``` และ ```Kids.json``` โดยเริ่มที่ front end คือไฟล์ ```index.html```ให้เปิด Visual Studio Code ไปที่ ```src/index.html``` โดยให้มีโค้ด ดังนี้ 
+รูปลักษณ์ตามที่เห็นนี้เป็นการแก้ไขไฟล์```index.html``` , ```app.js``` และ ```Kids.json``` โดยเริ่มที่ front end คือไฟล์ ```index.html```ให้เปิด Visual Studio Code ไปที่ ```src/index.html``` โดยให้มีโค้ด ดังนี้ 
 ```<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -443,7 +444,7 @@ $(function() {
 
 
 ```
-### 4.2 สร้างไฟล์ .json ####ซึ่งเป็นฐานข้อมูลของเด็กกำพร้าทั้ง 16 คน โดยไปที่โฟลเดอร์ src แล้วสร้าง New file ชื่อ Kids.json โดยให้มีโค้ด ดังต่อไปนี้
+### 4.2 สร้างไฟล์ .json ซึ่งเป็นฐานข้อมูลของเด็กกำพร้าทั้ง 16 คน โดยไปที่โฟลเดอร์ ```src``` แล้วสร้าง  ```New file``` ชื่อ ```Kids.json``` โดยให้มีโค้ด ดังต่อไปนี้
 ```[
     {
       "id": 0,
@@ -575,24 +576,24 @@ $(function() {
     }
   ]
   ```
-## 4. ติดตั้ง MetaMask
+## 5. ติดตั้ง MetaMask
 - ดาวน์โหลดและติดตั้ง MetaMask ที่บราวเซอร์ Firefox
 - เมื่อเริ่มใช้งาน MetaMask จะได้ดังรูป 
 
 [![metamask-01.png](https://i.postimg.cc/gJr5Jfpp/metamask-01.png)](https://postimg.cc/0MRZXXrX)
 
-- คลิกที่ Get Started จะได้ผลลัพธ์ดังรูปด้านล่าง  - สำหรับผู้ที่ยังไม่ได้สมัครมาก่อนให้กด Create wallet สำหรับผู้ที่มีบัญชีอยู่แล้วให้คลิกที่ Import Wallet เพื่อเชื่อมต่อ MetaMask เข้ากับ Wallet ของ Ganache
+- คลิกที่ ```Get Started``` จะได้ผลลัพธ์ดังรูปด้านล่าง  - สำหรับผู้ที่ยังไม่ได้สมัครมาก่อนให้กด ```Create wallet```  สำหรับผู้ที่มีบัญชีอยู่แล้วให้คลิกที่  ```Import Wallet``` เพื่อเชื่อมต่อ MetaMask เข้ากับ Wallet ของ Ganache
 
 [![metamask-02.png](https://i.postimg.cc/BQWKmHXc/metamask-02.png)](https://postimg.cc/jCX25W6L)
 
-- ทำการก็อปปี้ Seed จาก Ganache นำมาวางลงในช่อง Wallet Seed ตั้งพาสเวิร์ด ติ๊กที่ I have read and agree to the Terms of Use แล้วคลิก Import
+- ทำการก็อปปี้ Seed จาก Ganache นำมาวางลงในช่อง Wallet Seed ตั้งพาสเวิร์ด ติ๊กที่ ```I have read and agree to the Terms of Use```แล้วคลิก ```Import```
 [![Seed.png](https://i.postimg.cc/sX9tbp3Q/Seed.png)](https://postimg.cc/47yL9H7s)
 [![metamask-03.png](https://i.postimg.cc/SNyM0qfJ/metamask-03.png)](https://postimg.cc/c6bHYpjS)
 
-- ทำการย้ายจาก Ethereum Mainnet มาที่ Ganache โดยคลิกที่ Ethereum Mainnet แล้วเลือก Custom RPC
+- ทำการย้ายจาก ```Ethereum Mainnet``` มาที่ ```Ganache```โดยคลิกที่ ```Ethereum Mainnet```แล้วเลือก ```Custom RPC```
 [![metamask-04.png](https://i.postimg.cc/jjgbjHGp/metamask-04.png)](https://postimg.cc/McQ4PQZ5)
 
-- กรอกข้อมูล Network Name เป็น Ganache เพื่อให้จำง่าย สำหรับ New RPC URL ต้องเป็น URL ของ Ganache ซึ่งในที่นี้คือ ```http://127.0.0.1:7545``` 
+- กรอกข้อมูล ```Network Name``` เป็น ```Ganache```เพื่อให้จำง่าย สำหรับ ```New RPC URL``` ต้องเป็น URL ของ Ganache ซึ่งในที่นี้คือ ```http://127.0.0.1:7545``` 
 - สำหรับการตั้งค่าอื่นๆ ให้ดูตามภาพ
 
 [![metamask-05.png](https://i.postimg.cc/FR3D6mgT/metamask-05.png)](https://postimg.cc/qhBstPFK)
