@@ -38,13 +38,13 @@ truffle unbox pet-shop
 - test: เป็นไดเร็กทอรีใช้ที่เก็บไฟล์ Solidity หรือ JavaScript ก็ได้ ที่ใช้เพื่อทดสอบ Smart Contracts
 - truffle-config.js: คือไฟล์ที่ใช้ในการกำหนดค่าของโปรเจ็ค
 
-1.2 ที่ Visual studio code ให้เปิดโฟลเดอร์ที่เก็บไฟล์ที่ดาวน์โหลดจาก truffle framework โดยไปที่ File/open folder/pet-shop จากนั้นกด Select folder โฟลเดอร์ต่างๆ จะปรากฎที่ Explorer ตามภาพ  
+1.2 ที่ Visual studio code ให้เปิดโฟลเดอร์ที่เก็บไฟล์ที่ดาวน์โหลดจาก truffle framework โดยไปที่ ```File/open folder/pet-shop``` จากนั้นกด ```Select folder``` โฟลเดอร์ต่างๆ จะปรากฎที่ ``` Explorer``` ตามภาพ  
 [![Openfolder.png](https://i.postimg.cc/Kj2HN4LG/Openfolder.png)](https://postimg.cc/Q9fmN80w)
 
 ## 2. สร้าง Smart Contract
 ### 2.1. Adoption Smart Contract
 
-ใช้ Visual Studio Code นำเคอร์เซอร์วางเหนือโฟลเดอร์ ```contracts``` แล้วคลิกขวาไปที่ ```New file``` สร้างไฟล์ชื่อ ```Adoption.sol``` โดยมีโค้ดดังนี้
+ที่ Visual Studio Code ให้นำเคอร์เซอร์วางเหนือโฟลเดอร์ ```contracts``` แล้วคลิกขวาไปที่ ```New file``` และสร้างไฟล์ชื่อ ```Adoption.sol``` โดยมีโค้ดดังนี้
 
 ```
 pragma solidity ^0.5.16;
@@ -64,7 +64,7 @@ contract Adoption {
 }
 
 ```
-จากโค้ด จะเห็นได้ว่าคล้ายกับงาน petshop มาก โดยยังใช้จำนวน 16 เท่าเดิม แต่เปลี่ยน Id เป็น kid เพื่อให้เข้ากับเนื้อหาของเว็บไซต์
+จากโค้ด จะเห็นได้ว่าคล้ายกับงาน petshop มาก โดยยังใช้จำนวน 16 เท่าเดิม แต่เปลี่ยน PetId เป็น kidId เพื่อให้เข้ากับเนื้อหาของเว็บไซต์
 ### 2.2 compile 
 ลำดับต่อไปให้ทำการคอมไฟล์ Smart Contracts เพื่อให้เป็นภาษาที่เครื่องเข้าใจ โดยใช้คำสั่งใน terminal ดังนี้
 
