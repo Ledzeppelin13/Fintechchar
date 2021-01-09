@@ -84,7 +84,7 @@ module.exports = function(deployer) {
   deployer.deploy(Adoption);
 };
 ```
-ดาวน์โหลด Ganache จาก (Ganache)(https://www.trufflesuite.com/ganache) เมื่อดาวน์โหลดแล้วใช้เมาส์ดับเบิลคลิกที่ชื่อไฟล์ 
+ดาวน์โหลด Ganache จาก https://www.trufflesuite.com/ganache เมื่อดาวน์โหลดแล้วใช้เมาส์ดับเบิลคลิกที่ชื่อไฟล์ 
 
 [![ganache1.png](https://i.postimg.cc/bvqfzCdY/ganache1.png)](https://postimg.cc/pmc6CBD3)
 
@@ -100,7 +100,7 @@ module.exports = function(deployer) {
 ```
 truffle migrate
 ```
-หาก migrate ผ่าน จะปรากฎข้อความลักษณะดังกล่าว ซึ่งเป็นการอ่าน ไฟล์ ```Adoption.sol,1_initial_migration.js```และ```2_deploy_contracts.js```ซึ่งระบบจะนำข้อมูลไปไว้บนบล็อคเชน และคำนวณค่า gas ซึ่งมีหน่วยเป็น wei 
+หาก migrate ผ่าน จะปรากฎข้อความลักษณะดังกล่าว ซึ่งเป็นการอ่าน ไฟล์ ```Adoption.sol,1_initial_migration.js``` และ ```2_deploy_contracts.js```ซึ่งระบบจะนำข้อมูลไปไว้บนบล็อคเชน และคำนวณค่า gas ซึ่งมีหน่วยเป็น wei 
 ```
 Compiling your contracts...
 ===========================
@@ -167,7 +167,7 @@ Summary
 > Final cost:          0.0079154 ETH
 ```
 ### 1.3. ทดสอบ Smart Contract
-ไปที่ Visual Studio Code โดยนำเคอร์เซอร์ไปวางเหนือโฟลเดอร์ contracts แล้วคลิกขวาไปที่ New file สร้างไฟล์ชื่อ TestAdoption.sol โดยมีโค้ดดังนี้ 
+ไปที่ Visual Studio Code โดยนำเคอร์เซอร์ไปวางเหนือโฟลเดอร์ ```contracts ``` แล้วคลิกขวาไปที่ ```New file```แล้วสร้างไฟล์ชื่อ ```TestAdoption.sol``` โดยมีโค้ดดังนี้ 
 
 ```
 pragma solidity ^0.5.16;
@@ -200,7 +200,7 @@ contract TestAdoption {
   function testGetAdopterAddressByKidIdInArray() public {
     // Store adopters in memory rather than contract's storage
     address[16] memory adopters = adoption.getAdopters();
-    Assert.equal(adopters[expectedPetId], expectedAdopter, "Foster parent of the expected Kid should be this contract");
+    Assert.equal(adopters[expectedKidId], expectedAdopter, "Foster parent of the expected Kid should be this contract");
   }
 }
 ```
@@ -239,7 +239,7 @@ truffle test
 [![1.png](https://i.postimg.cc/GpnG9Y1m/1.png)](https://postimg.cc/ZWjCMWRG)
 [![2.png](https://i.postimg.cc/gjj61H3N/2.png)](https://postimg.cc/MfkTQRPQ)
 
-รูปลักษณ์เป็นการแก้ไขไฟล์ index.html ,app.js และ Kids.json โดยให้เปิด Visual Studio Code ไปที่ ```src/index.html``` โดยเริ่มที่ front end คือไฟล์ index.html โดยให้มีโค้ด ดังนี้ 
+รูปลักษณ์เป็นการแก้ไขไฟล์```index.html``` , ```app.js``` และ ```Kids.json``` โดยเริ่มที่ front end คือไฟล์ ```index.html```ให้เปิด Visual Studio Code ไปที่ ```src/index.html``` โดยให้มีโค้ด ดังนี้ 
 ```<!DOCTYPE html>
 <html lang="en">
   <head>
