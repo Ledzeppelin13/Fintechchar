@@ -599,15 +599,18 @@ $(function() {
 
 
 
-## 5. รันโปรแกรม 
+## 5. การทำงานของโปรแกรม 
 
-รัน Backend โดยใช้คำสั่ง 
+ให้รัน Backend โดยใช้คำสั่งใน terminal ดังนี้ 
 
 ```
 npm run dev
 ```
 
-จากนั้นเปิด Firefox ที่ URL ดังนี้ ```http://localhost:3000```
+จากนั้น Firefox จะเปิด web browser ขึ้นมาที่ URL  ```http://localhost:3000```
+
+จะเห็นได้ว่า ก่อนที่จะมีการอุปการะ ปุ่มด้านล่างกล่องข้อมูลของเด็กแต่ละคนจะขึ้นว่า "อุปการะ" อยู่ เป็นตัวหนังสือสีเข้ม
+[![before-Adopt.png](https://i.postimg.cc/RVd98xgC/before-Adopt.png)](https://postimg.cc/QHFR9wLv)
 
 
          
