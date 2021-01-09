@@ -594,6 +594,7 @@ $(function() {
 
 - กรอกข้อมูล Network Name เป็น Ganache เพื่อให้จำง่าย สำหรับ New RPC URL ต้องเป็น URL ของ Ganache ซึ่งในที่นี้คือ ```http://127.0.0.1:7545``` 
 - สำหรับการตั้งค่าอื่นๆ ให้ดูตามภาพ
+
 [![metamask-05.png](https://i.postimg.cc/FR3D6mgT/metamask-05.png)](https://postimg.cc/qhBstPFK)
 
 
