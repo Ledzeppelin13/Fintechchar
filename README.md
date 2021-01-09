@@ -585,9 +585,10 @@ $(function() {
 
 [![metamask-02.png](https://i.postimg.cc/BQWKmHXc/metamask-02.png)](https://postimg.cc/jCX25W6L)
 
-- สำหรับผู้ที่ยังไม่ได้สมัครมาก่อนให้กดเพิ่ม wallet สำหรับผู้ที่มีบัญชีอยู่แล้วให้คลิกที่ Import Wallet เพื่อเชื่อมต่อ MetaMask เข้ากับ Wallet ของ Ganache
+- สำหรับผู้ที่ยังไม่ได้สมัครมาก่อนให้กด Create wallet สำหรับผู้ที่มีบัญชีอยู่แล้วให้คลิกที่ Import Wallet เพื่อเชื่อมต่อ MetaMask เข้ากับ Wallet ของ Ganache
 
-![Metamask_03](img/metamask_03.png)
+[![Seed.png](https://i.postimg.cc/sX9tbp3Q/Seed.png)](https://postimg.cc/47yL9H7s)
+[![metamask-03.png](https://i.postimg.cc/Kcp9j9pc/metamask-03.png)](https://postimg.cc/1460YKZb)
 
 - ทำการก็อปปี้ Seed จาก Ganache นำมาวางลงในช่อง Wallet Seed ตั้งพาสเวิร์ด ติ๊กที่ I have read and agree to the Terms of Use แล้วคลิก Import
 
