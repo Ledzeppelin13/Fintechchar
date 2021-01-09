@@ -100,7 +100,72 @@ module.exports = function(deployer) {
 ```
 truffle migrate
 ```
+หาก Migrate ผ่าน จะปรากฎข้อความลักษณะดังกล่าว
+```
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
 
+
+
+Starting migrations...
+======================
+> Network name:    'development'
+> Network id:      5777
+> Block gas limit: 6721975 (0x6691b7)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xc6c26d00c1a2389cf091b21acfbf8c6d49792b855738849bb3c0ea9381da3fab   > Blocks: 0            Seconds: 0
+   > contract address:    0xBAD797B409700E05374664CAd548f20F3a47b84F
+   > block number:        18
+   > block timestamp:     1610204710
+   > account:             0xd797cb4efB9759A907E7849a454fEE2D9ba059EF
+   > balance:             99.97105016
+   > gas used:            191943 (0x2edc7)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00383886 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00383886 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'Adoption'
+   --------------------
+   > transaction hash:    0x5fd4693613601e09253f91a33fd5abe31bc469f2f7a00360c87be5854d00caa4   > Blocks: 0            Seconds: 0
+   > contract address:    0xA7621957B4A66C341a56Fd82b5f1eA93EC9859D1
+   > block number:        20
+   > block timestamp:     1610204711
+   > account:             0xd797cb4efB9759A907E7849a454fEE2D9ba059EF
+   > balance:             99.96612686
+   > gas used:            203827 (0x31c33)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00407654 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00407654 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.0079154 ETH
+```
 ### 1.3. ทดสอบ Smart Contract
 ใช้ Visual Studio Code ในการสร้างไฟล์ TestAdoption.sol เพื่อทดสอบ Adoption.sol และบันทึกลงในไดเร็กทอรี test 
 
