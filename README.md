@@ -72,7 +72,7 @@ truffle compile
 ```
 
 โปรดตรวจสอบว่า สามารถคอมไพล์ได้สำเร็จก่อนทำในขั้นตอนต่อไป โดยจะมีข้อความเช่นนี้หรือคล้ายกัน ปรากฎขึ้นมา
-[![compile.png](https://i.postimg.cc/RV36G2b6/compile.png)](https://postimg.cc/YhHCCD7M)
+[![compile.png](https://i.postimg.cc/V6nxgsPs/compile.png)](https://postimg.cc/4742Ng3j)
 
 ใช้ Visual Studio Code นำเคอร์เซอร์วางเหนือโฟลเดอร์ migrations แล้วคลิกขวาไปที่ New file แล้วสร้างไฟล์ชื่อ 2_deploy_contracts.js ในไดเร็กทอรี แล้วเขียนโค้ดดังนี้
 
