@@ -239,7 +239,81 @@ truffle test
 [![1.png](https://i.postimg.cc/ncX8rf3L/1.png)](https://postimg.cc/RNxppy5r)
 [![2.png](https://i.postimg.cc/wB0FD7vY/2.png)](https://postimg.cc/t1nhjRWB)
 
-สร้างผลลัพธ์เช่นรูปข้างต้นได้โดยใช้ไฟล์ ```src/index.html``` โปรดเปิดไฟล์นี้โดยใช้ Visual Studio Code และสำรวจโครงสร้างของไฟล์ สังเกตได้ว่า มีส่วนที่เป็น Template ในขณะที่ข้อมูลที่ใช้ในการแสดงผลจะถูกกำหนดโดยส่วน Backend
+รูปลักษณ์เป็นการแก้ไขไฟล์ index.html ,app.js และ Kids.json โดยให้เปิด Visual Studio Code ไปที่ ```src``` โดยเริ่มที่ front end คือไฟล์ index.html โดยให้มีโค้ด ดังนี้ 
+```<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>มูลนิธิศูนย์เด็กกำพร้าชาลีมิตร</title>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body background="https://www.muralswallpaper.co.uk/app/uploads/watercolour-polka-dot-room-825x535.jpg">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1
+          style="font-size: 60px; 
+                color: rgb(26, 20, 114);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                border: 10px rgb(218, 4, 4); 
+                border-style: double; 
+                background-color: white;" 
+          class="text-center">
+            <b>มูลนิธิศูนย์เด็กกำพร้าชาลีมิตร</b></h1>
+          <hr/>
+          <p style="font-size: 30px; 
+          color: rgb(70, 121, 12);
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          border: 10px rgb(218, 4, 4); 
+          background-color: white;" >เบอร์ติดต่อ : 02-657-3741</p>
+        </div>
+      </div>
+      <div id="kidsRow" class="row">
+        <!-- KIDS LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="kidTemplate" style="display: none;">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="panel panel-default panel-pet">
+          <div class="panel-heading">
+            <h2 class="panel-title"><b>Scrappy</b></h2>
+          </div>
+          <div class="panel-body">
+            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
+            <br/><br/>
+            <strong>เชื้อชาติ</strong>: <span class="pet-breed">Golden Retriever</span><br/>
+            <strong>อายุ</strong>: <span class="pet-age">3</span><br/>
+            <strong>ที่อยู่ศูนย์กำพร้า</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
+            <button class="btn btn-default btn-adopt" type="button" data-id="0">รับอุปการะ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+```
 
 ## 3. สร้าง Backend ที่สามารถเชื่อมต่อกับ Smart Contract
 แก้ไขไฟล์ ```src/js/app.js``` ให้มีโค้ดดังนี้
