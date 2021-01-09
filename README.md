@@ -607,10 +607,16 @@ $(function() {
 npm run dev
 ```
 
-จากนั้น Firefox จะเปิด web browser ขึ้นมาที่ URL  ```http://localhost:3000```
+-จากนั้น Firefox จะเปิด web browser ขึ้นมาที่ URL  ```http://localhost:3000```
 
-จะเห็นได้ว่า ก่อนที่จะมีการอุปการะ ปุ่มด้านล่างกล่องข้อมูลของเด็กแต่ละคนจะขึ้นว่า "อุปการะ" อยู่ เป็นตัวหนังสือสีเข้ม
+-จะเห็นได้ว่า ก่อนที่จะมีการอุปการะ ปุ่มด้านล่างกล่องข้อมูลของเด็กแต่ละคนจะขึ้นว่า "รับอุปการะ" อยู่ เป็นตัวหนังสือสีเข้ม
 [![before-Adopt.png](https://i.postimg.cc/RVd98xgC/before-Adopt.png)](https://postimg.cc/QHFR9wLv)
+
+-เมื่อมีผู้ใจบุญมาเลือกเด็กไปอุปการะแล้ว ปุ่มด้านล่างกล่องข้อมูลจะเปลี่ยน "อุปการะแล้ว" อยู่ เป็นตัวหนังสือสีจาง 
+[![After-Adopt.png](https://i.postimg.cc/9fhf5YGC/After-Adopt.png)](https://postimg.cc/PCSH1Z3R)
+
+-Ganache และ meta mask จะอัพเดทยอดเงินหลังหักค่า gas ให้ตรงกัน
+[![Meta-Ganache.png](https://i.postimg.cc/W306pny8/Meta-Ganache.png)](https://postimg.cc/r0FtQSMR)
 
 
          
