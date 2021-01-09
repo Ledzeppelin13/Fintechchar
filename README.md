@@ -166,7 +166,7 @@ Summary
 > Total deployments:   2
 > Final cost:          0.0079154 ETH
 ```
-### 1.3. ทดสอบ Smart Contract
+### 2.3. ทดสอบ Smart Contract
 ไปที่ Visual Studio Code โดยนำเคอร์เซอร์ไปวางเหนือโฟลเดอร์ ```contracts ``` แล้วคลิกขวาไปที่ ```New file```แล้วสร้างไฟล์ชื่อ ```TestAdoption.sol``` โดยมีโค้ดดังนี้ 
 
 ```
@@ -233,7 +233,7 @@ truffle test
 ```
 
 
-## 2.รูปแบบเว็บไซต์ ( User Interface :UI) ซึ่งเป็น front end เพื่อใช้เชื่อมต่อกับผู้ใช้
+## 3.รูปแบบเว็บไซต์ ( User Interface :UI) ซึ่งเป็น front end เพื่อใช้เชื่อมต่อกับผู้ใช้
 รูปลักษณ์ของเว็บแอพพลิเคชั่นที่ออกแบบมีลักษณ์ ดังนี้ 
 
 [![1.png](https://i.postimg.cc/GpnG9Y1m/1.png)](https://postimg.cc/ZWjCMWRG)
@@ -315,8 +315,8 @@ truffle test
 </html>
 ```
 
-## 3. สร้าง Backend ที่สามารถเชื่อมต่อกับ Smart Contract
-### 3.1 ให้แก้ไขไฟล์ ```src/js/app.js``` ใน visual studio code ให้มีโค้ดดังนี้
+## 4. สร้าง Backend ที่สามารถเชื่อมต่อกับ Smart Contract
+### 4.1 ให้แก้ไขไฟล์ ```src/js/app.js``` ใน visual studio code ให้มีโค้ดดังนี้
 
 ```
 App = {
@@ -443,7 +443,7 @@ $(function() {
 
 
 ```
-### 3.2 สร้างไฟล์ .json ซึ่งเป็นฐานข้อมูลของเด็กกำพร้าทั้ง 16 คน โดยไปที่โฟลเดอร์ src แล้วสร้าง New file ชื่อ Kids.json โดยให้มีโค้ด ดังต่อไปนี้
+### 4.2 สร้างไฟล์ .json ####ซึ่งเป็นฐานข้อมูลของเด็กกำพร้าทั้ง 16 คน โดยไปที่โฟลเดอร์ src แล้วสร้าง New file ชื่อ Kids.json โดยให้มีโค้ด ดังต่อไปนี้
 ```[
     {
       "id": 0,
@@ -576,7 +576,7 @@ $(function() {
   ]
   ```
 ## 4. ติดตั้ง MetaMask
-- ติดตั้ง MetaMask ที่บราวเซอร์ Firefox
+- ดาวน์โหลดและติดตั้ง MetaMask ที่บราวเซอร์ Firefox
 - เมื่อเริ่มใช้งาน MetaMask จะได้ดังรูป 
 
 [![metamask-01.png](https://i.postimg.cc/gJr5Jfpp/metamask-01.png)](https://postimg.cc/0MRZXXrX)
@@ -615,7 +615,7 @@ npm run dev
 -เมื่อมีผู้ใจบุญมาเลือกเด็กไปอุปการะแล้ว ปุ่มด้านล่างกล่องข้อมูลจะเปลี่ยนเป็น ```"อุปการะแล้ว" ```เป็นตัวหนังสือสีจางแทน 
 [![After-Adopt.png](https://i.postimg.cc/9fhf5YGC/After-Adopt.png)](https://postimg.cc/PCSH1Z3R)
 
--Ganache และ meta mask จะอัพเดทยอดเงินหลังหักค่า gas ให้ตรงกัน
+-Ganache และ meta mask จะอัพเดทยอดเงินหลังหักค่า gas ให้ตรงกัน ถือว่าการทำงานสมบูรณ์
 [![Meta-Ganache.png](https://i.postimg.cc/W306pny8/Meta-Ganache.png)](https://postimg.cc/r0FtQSMR)
 
 
