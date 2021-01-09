@@ -80,7 +80,7 @@ module.exports = function(deployer) {
 ```
 เปิดโปรแกรม Ganache โดยการใช้เมาส์ดับเบิลคลิกที่ชื่อไฟล์ จากนั้นคลิกที่ New Workspace ในกรณีที่ใช้งานครั้งแรก ครั้งต่อไปไม่จำเป็นต้องสร้าง Workspace ใหม่ทุกครั้ง
 
-![Ganache](img/ganache_01.png)
+[![7.jpg](https://i.postimg.cc/Y0YYmW53/7.jpg)](https://postimg.cc/D4f898yJ)
 
 ที่ Workspace Name ให้ตั้งชื่อเช่น NF507 แล้วคลิก Save Workspace
 
