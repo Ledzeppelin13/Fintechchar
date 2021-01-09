@@ -40,24 +40,25 @@ truffle unbox pet-shop
 ## 2. สร้าง Smart Contract
 ### 2.1. Adoption Smart Contract
 
-ใช้ Visual Studio Code เพื่อสร้างไฟล์ชื่อ Adoption.sol ในไดเร็กทอรี contracts โดยมีโค้ดดังนี้
+ใช้ Visual Studio Code นำเคอร์เซอร์วางเหนือโฟลเดอร์ contracts แล้วคลิกขวาไปที่ New file สร้างไฟล์ชื่อ Adoption.sol โดยมีโค้ดดังนี้
 
 ```
-pragma solidity ^0.5.0;
+pragma solidity ^0.7.4;
 
 contract Adoption {
     address[16] public adopters;
 
-    function adopt(uint petId) public returns (uint) {
-        require(petId >= 0 && petId <=15);
-        adopters[petId] = msg.sender;
-        return petId;
+    function adopt(uint kidId) public returns (uint) {
+        require(kidId >= 0 && kidId <=15);
+        adopters[kidId] = msg.sender;
+        return kidId;
     }
 
     function getAdopters() public view returns (address[16] memory) {
         return adopters;
     }
 }
+
 ```
 
 ### 1.2. compile และ migrate
