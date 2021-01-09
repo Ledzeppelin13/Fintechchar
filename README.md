@@ -167,7 +167,7 @@ Summary
 > Final cost:          0.0079154 ETH
 ```
 ### 1.3. ทดสอบ Smart Contract
-ใช้ Visual Studio Code ในการสร้างไฟล์ TestAdoption.sol เพื่อทดสอบ Adoption.sol และบันทึกลงในไดเร็กทอรี test 
+ไปที่ Visual Studio Code โดยนำเคอร์เซอร์ไปวางเหนือโฟลเดอร์ contracts แล้วคลิกขวาไปที่ New file สร้างไฟล์ชื่อ TestAdoption.sol โดยมีโค้ดดังนี้ 
 
 ```
 pragma solidity ^0.5.0;
@@ -180,33 +180,32 @@ contract TestAdoption {
   // The address of the adoption contract to be tested
   Adoption adoption = Adoption(DeployedAddresses.Adoption());
 
-  // The id of the pet that will be used for testing
-  uint expectedPetId = 8;
+  // The id of the kid that will be used for testing
+  uint expectedKidId = 8;
 
-  //The expected owner of adopted pet is this contract
+  //The expected Foster parent of adopted kid is this contract
   address expectedAdopter = address(this);
 
-  function testUserCanAdoptPet() public {
-    uint returnedId = adoption.adopt(expectedPetId);
-    Assert.equal(returnedId, expectedPetId, "Adoption of the expected pet should match what is returned.");
+  function testUserCanAdoptKid() public {
+    uint returnedId = adoption.adopt(expectedKidId);
+    Assert.equal(returnedId, expectedKidId, "Adoption of the expected kid should match what is returned.");
   }
 
-  // Testing retrieval of a single pet's owner
-  function testGetAdopterAddressByPetId() public {
-    address adopter = adoption.adopters(expectedPetId);
-    Assert.equal(adopter, expectedAdopter, "Owner of the expected pet should be this contract");
+  function testGetAdopterAddressByKidId() public {
+    address adopter = adoption.adopters(expectedKidId);
+    Assert.equal(adopter, expectedAdopter, "Foster parent of the expected Kid should be this contract");
   }
 
-  // Testing retrieval of all pet owners
-  function testGetAdopterAddressByPetIdInArray() public {
+  // Testing retrieval of all kid Foster parents
+  function testGetAdopterAddressByKidIdInArray() public {
     // Store adopters in memory rather than contract's storage
     address[16] memory adopters = adoption.getAdopters();
-    Assert.equal(adopters[expectedPetId], expectedAdopter, "Owner of the expected pet should be this contract");
+    Assert.equal(adopters[expectedPetId], expectedAdopter, "Foster parent of the expected Kid should be this contract");
   }
 }
 ```
 
-ต่อไปคือ การรันการทดสอบที่เขียนไว้ในไดเร็กทอรี test โดยใช้คำสั่งต่อไปนี้
+รันการทดสอบโค้ดด้านบน โดยใช้คำสั่งใน terminal ต่อไปนี้
 
 ```
 truffle test
@@ -225,9 +224,9 @@ truffle test
       - solc: 0.5.0+commit.1d4f565a.Emscripten.clang
 
      TestAdoption
-       ✓ testUserCanAdoptPet (91ms)
-       ✓ testGetAdopterAddressByPetId (70ms)
-       ✓ testGetAdopterAddressByPetIdInArray (89ms)
+       ✓ testUserCanAdoptKidt (91ms)
+       ✓ testGetAdopterAddressByKidId (70ms)
+       ✓ testGetAdopterAddressByKidIdInArray (89ms)
 
 
      3 passing (670ms)
