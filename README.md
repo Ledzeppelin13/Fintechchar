@@ -36,6 +36,7 @@ truffle unbox pet-shop
 - src: เป็นไดเร็กทอรีที่ใช้เก็บไฟล์ที่เกี่ยวข้องกับ Web Application เช่น JavaScript, CSS, HTML, images เป็นต้น
 - test: เป็นไดเร็กทอรีใช้ที่เก็บไฟล์ Solidity หรือ JavaScript ก็ได้ ที่ใช้เพื่อทดสอบ Smart Contracts
 - truffle-config.js: คือไฟล์ที่ใช้ในการกำหนดค่าของโปรเจ็ค
+
 1.2 ที่ Visual studio code ให้เปิดโฟลเดอร์ที่เก็บไฟล์ที่ดาวน์โหลดจาก truffle framework โดยไปที่ File/open folder/pet-shop จากนั้นกด Select folder โฟลเดอร์ต่างๆ จะปรากฎที่ Explorer ตามภาพ  
 [![Openfolder.png](https://i.postimg.cc/x88YjDbK/Openfolder.png)](https://postimg.cc/BLrRNzp6)
 
