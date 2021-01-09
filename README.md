@@ -100,7 +100,7 @@ module.exports = function(deployer) {
 ```
 truffle migrate
 ```
-หาก ทigrate ผ่าน จะปรากฎข้อความลักษณะดังกล่าว ซึ่งเป็นการอ่าน ไฟล์ Adoption.sol,1_initial_migration.js และ 2_deploy_contracts.js ซึ่งระบบจะนำข้อมูลไปไว้บนบล็อคเชน และคำนวณค่า gas ซึ่งมีหน่วยเป็น wei 
+หาก migrate ผ่าน จะปรากฎข้อความลักษณะดังกล่าว ซึ่งเป็นการอ่าน ไฟล์ Adoption.sol,1_initial_migration.js และ 2_deploy_contracts.js ซึ่งระบบจะนำข้อมูลไปไว้บนบล็อคเชน และคำนวณค่า gas ซึ่งมีหน่วยเป็น wei 
 ```
 Compiling your contracts...
 ===========================
