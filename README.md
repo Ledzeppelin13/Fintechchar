@@ -47,7 +47,7 @@ truffle unbox pet-shop
 ใช้ Visual Studio Code นำเคอร์เซอร์วางเหนือโฟลเดอร์ contracts แล้วคลิกขวาไปที่ New file สร้างไฟล์ชื่อ Adoption.sol โดยมีโค้ดดังนี้
 
 ```
-pragma solidity ^0.7.4;
+pragma solidity ^0.5.16;
 
 contract Adoption {
     address[16] public adopters;
@@ -170,7 +170,7 @@ Summary
 ไปที่ Visual Studio Code โดยนำเคอร์เซอร์ไปวางเหนือโฟลเดอร์ contracts แล้วคลิกขวาไปที่ New file สร้างไฟล์ชื่อ TestAdoption.sol โดยมีโค้ดดังนี้ 
 
 ```
-pragma solidity ^0.5.0;
+pragma solidity ^0.5.16;
 
 import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
@@ -233,10 +233,11 @@ truffle test
 ```
 
 
-## 2. ออกแบบ UI เพื่อใช้เชื่อมต่อกับผู้ใช้
-ส่วนติดต่อกับผู้ใช้ เป็นดังรูปต่อไปนี้
+## 2.รูปแบบเว็บไซต์ ( User Interface :UI) เพื่อใช้เชื่อมต่อกับผู้ใช้
+รูปลักษณ์ของเว็บแอพพลิเคชั่นที่ออกแบบมีลักษณ์ ดังนี้ 
 
-![FrontPage](img/front_end_final.png)
+[![1.png](https://i.postimg.cc/ncX8rf3L/1.png)](https://postimg.cc/RNxppy5r)
+[![2.png](https://i.postimg.cc/wB0FD7vY/2.png)](https://postimg.cc/t1nhjRWB)
 
 สร้างผลลัพธ์เช่นรูปข้างต้นได้โดยใช้ไฟล์ ```src/index.html``` โปรดเปิดไฟล์นี้โดยใช้ Visual Studio Code และสำรวจโครงสร้างของไฟล์ สังเกตได้ว่า มีส่วนที่เป็น Template ในขณะที่ข้อมูลที่ใช้ในการแสดงผลจะถูกกำหนดโดยส่วน Backend
 
