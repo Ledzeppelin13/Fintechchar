@@ -29,6 +29,7 @@ cd pet-shop
 truffle unbox pet-shop
 ```
 เครื่องจะทำการดาวน์โหลดไฟล์ลงมาไว้ในโฟลเดอร์ pet-shop ที่สร้างไว้ข้างต้น  เมื่อดาวน์โหลดเสร็จ จะขึ้นข้อความตามภาพ
+
 [![unbox.png](https://i.postimg.cc/fLdFbSSM/unbox.png)](https://postimg.cc/0M8ZWQC4)
 
 ทดลองใช้คำสั่ง ```ls -l``` เพื่อดูโครงสร้างของโปรเจ็ค สังเกตว่า มีไดเร็กทอรีและไฟล์ที่สำคัญต่อไปนี้
@@ -40,6 +41,7 @@ truffle unbox pet-shop
 - truffle-config.js: คือไฟล์ที่ใช้ในการกำหนดค่าของโปรเจ็ค
 
 1.2 ที่ Visual studio code ให้เปิดโฟลเดอร์ที่เก็บไฟล์ที่ดาวน์โหลดจาก truffle framework โดยไปที่ ```File/open folder/pet-shop``` จากนั้นกด ```Select folder``` โฟลเดอร์ต่างๆ จะปรากฎที่ ``` Explorer``` ตามภาพ  
+
 [![Openfolder.png](https://i.postimg.cc/Kj2HN4LG/Openfolder.png)](https://postimg.cc/Q9fmN80w)
 
 ## 2. สร้าง Smart Contract
@@ -75,6 +77,7 @@ truffle compile
 ```
 
 โปรดตรวจสอบว่า สามารถคอมไพล์ได้สำเร็จก่อนทำในขั้นตอนต่อไป โดยจะมีข้อความเช่นนี้หรือคล้ายกัน ปรากฎขึ้นมา
+
 [![compile.png](https://i.postimg.cc/nz07LhxR/compile.png)](https://postimg.cc/0MKrWxbD)
 
 จากนั้นใน **Visual Studio Code** ให้นำเคอร์เซอร์วางเหนือโฟลเดอร์ ```migrations``` แล้วคลิกขวาไปที่ ```New file``` แล้วสร้างไฟล์ชื่อ ```2_deploy_contracts.js``` แล้วเขียนโค้ดดังนี้
@@ -91,10 +94,12 @@ module.exports = function(deployer) {
 [![ganache1.png](https://i.postimg.cc/bvqfzCdY/ganache1.png)](https://postimg.cc/pmc6CBD3)
 
 คลิกที่  ```New Workspace```เพื่อตั้งชื่อ ในที่นี้จะตั้งชื่อตามวิชาคือ NF507 จากนั้นคลิก ```Save Workspace```
+
 [![ganache2.png](https://i.postimg.cc/Y91XhkPJ/ganache2.png)](https://postimg.cc/zbGwQm8j)
 
 
 จะปรากฎ การแสดง account บน ganache ต่างๆ ตามภาพ
+
 [![ganache3.png](https://i.postimg.cc/85V489Cw/ganache3.png)](https://postimg.cc/f3BmmHm0)
 
 ### 2.3 Migrate
@@ -105,6 +110,7 @@ module.exports = function(deployer) {
 truffle migrate
 ```
 หาก **migrate** ผ่าน จะปรากฎข้อความลักษณะดังกล่าว ซึ่งเป็นการอ่าน ไฟล์ ```Adoption.sol,1_initial_migration.js``` และ ```2_deploy_contracts.js```ซึ่งระบบจะนำข้อมูลไปไว้บนบล็อคเชน และคำนวณค่า gas ซึ่งมีหน่วยเป็น _**Wei**_ ,_**Gwei**_ และ _**Ether**_ ตามลำดับ
+
 ```
 Compiling your contracts...
 ===========================
@@ -244,6 +250,7 @@ Compiling your contracts...
 [![2.png](https://i.postimg.cc/gjj61H3N/2.png)](https://postimg.cc/MfkTQRPQ)
 
 รูปลักษณ์ตามที่เห็นนี้เป็นการแก้ไขไฟล์```index.html``` , ```app.js``` และ ```Kids.json``` โดยเริ่มที่ **front end** คือไฟล์ ```index.html```ให้เปิด **Visual Studio Code** ไปที่ ```src/index.html``` โดยให้มีโค้ด ดังนี้ 
+
 ```<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -591,11 +598,13 @@ $(function() {
 
 [![metamask-02.png](https://i.postimg.cc/BQWKmHXc/metamask-02.png)](https://postimg.cc/jCX25W6L)
 
-- ทำการก็อปปี้ **Seed** จาก **Ganache** นำมาวางลงในช่อง **Wallet Seed** จากนั้นตั้งพาสเวิร์ด แล้วติ๊กที่ ```I have read and agree to the Terms of Use```แล้วคลิก ```Import```
+- ทำการก็อปปี้ Seed จาก Ganache นำมาวางลงในช่อง Wallet Seed จากนั้นตั้งพาสเวิร์ด แล้วติ๊กที่```I have read and agree to the Terms of Use```แล้วคลิก ```Import```
+
 [![Seed.png](https://i.postimg.cc/sX9tbp3Q/Seed.png)](https://postimg.cc/47yL9H7s)
 [![metamask-03.png](https://i.postimg.cc/SNyM0qfJ/metamask-03.png)](https://postimg.cc/c6bHYpjS)
 
 - ทำการย้ายจาก ```Ethereum Mainnet``` มาที่ ```Ganache```โดยคลิกที่ ```Ethereum Mainnet```แล้วเลือก ```Custom RPC```
+
 [![metamask-04.png](https://i.postimg.cc/jjgbjHGp/metamask-04.png)](https://postimg.cc/McQ4PQZ5)
 
 - กรอกข้อมูล ```Network Name``` เป็น ```Ganache```เพื่อให้จำง่าย สำหรับ ```New RPC URL``` ต้องเป็น URL ของ Ganache ซึ่งในที่นี้คือ ```http://127.0.0.1:7545``` 
