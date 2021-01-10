@@ -238,7 +238,6 @@ Compiling your contracts...
 
 
 ## 3.รูปแบบเว็บไซต์ ( User Interface :UI) ซึ่งเป็น front end เพื่อใช้เชื่อมต่อกับผู้ใช้
----------
 รูปลักษณ์ของเว็บแอพพลิเคชั่นที่ออกแบบมีลักษณะ ดังนี้ 
 
 [![1.png](https://i.postimg.cc/GpnG9Y1m/1.png)](https://postimg.cc/ZWjCMWRG)
@@ -321,7 +320,6 @@ Compiling your contracts...
 ```
 
 ## 4. สร้าง Backend ที่สามารถเชื่อมต่อกับ Smart Contract
----------
 ### 4.1 ให้แก้ไขไฟล์ ```src/js/app.js``` ใน visual studio code ให้มีโค้ดดังนี้
 
 ```
@@ -584,7 +582,6 @@ $(function() {
   ]
   ```
 ## 5. ติดตั้ง MetaMask
----------
 - ดาวน์โหลดและติดตั้ง MetaMask ที่บราวเซอร์ Firefox
 - เมื่อเริ่มใช้งาน MetaMask จะเข้าสู่หน้าแรก ตามภาพ 
 
@@ -609,7 +606,6 @@ $(function() {
 
 
 ## 6. การทำงานของโปรแกรม 
----------
 
 ให้รันโปรแกรม โดยใช้คำสั่งใน terminal ดังนี้ 
 
