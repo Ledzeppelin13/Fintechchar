@@ -16,14 +16,14 @@
         
 
 ## 1. กำหนดค่าสิ่งแวดล้อมของโปรเจคต์
--การสร้างไดเร็กทอรีสำหรับบันทึกโปรเจ็คนี้ เนื่องจากนำต้นฉบับมาจาก [Pet Shop tutorial](http://truffleframework.com/tutorials/pet-shop) เพื่อเป็นการป้องกันความผิดพลาดในการบันทึกไฟล์ จึงใช้ชื่อ pet-shop เหมือนกับที่ Truffle ตั้งไว้ โดยเปิด Terminal ขึ้นมาและใช้คำสั่งดังต่อไปนี้
+-การสร้างไดเร็กทอรีสำหรับบันทึกโปรเจ็คนี้ เนื่องจากนำต้นฉบับมาจาก [Pet Shop tutorial](http://truffleframework.com/tutorials/pet-shop) เพื่อเป็นการป้องกันความผิดพลาดในการบันทึกไฟล์ จึงใช้ชื่อ **pet-shop** เหมือนกับที่ Truffle ตั้งไว้ โดยเปิด Terminal ขึ้นมาและใช้คำสั่งดังต่อไปนี้
 
 ```
 mkdir pet-shop
 cd pet-shop
 ```
 
-1.1 ดาวน์โหลดโครงสร้างและไฟล์ต่างๆ ของโปรเจ็คต์ **pet-shop** จาก Truffle Framework โดยใช้คำสั่งต่อไปนี้ใน terminal
+1.1 ดาวน์โหลดโครงสร้างและไฟล์ต่างๆ ของโปรเจ็คต์ **pet-shop** จาก **Truffle Framework** โดยใช้คำสั่งต่อไปนี้ใน terminal
 
 ```
 truffle unbox pet-shop
@@ -33,7 +33,7 @@ truffle unbox pet-shop
 
 ทดลองใช้คำสั่ง ```ls -l``` เพื่อดูโครงสร้างของโปรเจ็ค สังเกตว่า มีไดเร็กทอรีและไฟล์ที่สำคัญต่อไปนี้
 
-- contracts: เป็นไดเร็กทอรีที่ใช้เก็บ Smart Contracts ที่เขียนด้วยภาษา Solidity
+- contracts: เป็นไดเร็กทอรีที่ใช้เก็บ Smart Contracts ที่เขียนด้วยภาษา _**Solidity**_
 - migrations: เป็นไดเร็กทอรีที่ใช้เก็บไฟล์ JavaScript ซึ่งเป็นโค้ดที่ใช้ในการจัดการ Smart Contracts ให้ลงไปยังบล็อกเชน
 - src: เป็นไดเร็กทอรีที่ใช้เก็บไฟล์ที่เกี่ยวข้องกับ Web Application เช่น JavaScript, CSS, HTML, images เป็นต้น
 - test: เป็นไดเร็กทอรีใช้ที่เก็บไฟล์ Solidity หรือ JavaScript ก็ได้ ที่ใช้เพื่อทดสอบ Smart Contracts
@@ -65,7 +65,7 @@ contract Adoption {
 }
 
 ```
-จากโค้ด จะเห็นได้ว่าคล้ายกับงาน petshop มาก โดยยังใช้จำนวน 16 เท่าเดิม แต่เปลี่ยน **PetId** เป็น **kidId** เพื่อให้เข้ากับเนื้อหาของเว็บไซต์
+จากโค้ด จะเห็นได้ว่าคล้ายกับงาน petshop มาก โดยยังใช้จำนวน 16 เท่าเดิม แต่เปลี่ยน _**PetId**_ เป็น _**kidId**_ เพื่อให้เข้ากับเนื้อหาของเว็บไซต์
 ### 2.2 compile 
 ---------
 ลำดับต่อไปให้ทำการคอมไฟล์ Smart Contracts เพื่อให้เป็นภาษาที่เครื่องเข้าใจ โดยใช้คำสั่งใน terminal ดังนี้
@@ -99,12 +99,12 @@ module.exports = function(deployer) {
 
 ### 2.3 Migrate
 ---------
-ในขั้นตอนต่อไปให้ทำการ migrate Smart contract ไปอยู่บน personal blockchain ซึ่งในที่นี้คือ ganache ทำได้โดยใช้คำสั่งใน terminal ดังต่อไปนี้
+ในขั้นตอนต่อไปให้ทำการ **migrate** Smart contract ไปอยู่บน _**personal blockchain**_ ซึ่งในที่นี้คือ **ganache** ทำได้โดยใช้คำสั่งใน **terminal** ดังต่อไปนี้
 
 ```
 truffle migrate
 ```
-หาก migrate ผ่าน จะปรากฎข้อความลักษณะดังกล่าว ซึ่งเป็นการอ่าน ไฟล์ ```Adoption.sol,1_initial_migration.js``` และ ```2_deploy_contracts.js```ซึ่งระบบจะนำข้อมูลไปไว้บนบล็อคเชน และคำนวณค่า gas ซึ่งมีหน่วยเป็น **Wei** ,**Gwei** และ **Ether** ตามลำดับ
+หาก **migrate** ผ่าน จะปรากฎข้อความลักษณะดังกล่าว ซึ่งเป็นการอ่าน ไฟล์ ```Adoption.sol,1_initial_migration.js``` และ ```2_deploy_contracts.js```ซึ่งระบบจะนำข้อมูลไปไว้บนบล็อคเชน และคำนวณค่า gas ซึ่งมีหน่วยเป็น _**Wei**_ ,_**Gwei**_ และ _**Ether**_ ตามลำดับ
 ```
 Compiling your contracts...
 ===========================
@@ -172,7 +172,7 @@ Summary
 ```
 ### 2.4 ทดสอบ Smart Contract
 ---------
-ไปที่ Visual Studio Code โดยนำเคอร์เซอร์ไปวางเหนือโฟลเดอร์ ```contracts ``` แล้วคลิกขวาไปที่ ```New file```แล้วสร้างไฟล์ชื่อ ```TestAdoption.sol``` โดยมีโค้ดดังนี้ 
+ไปที่ **Visual Studio Code** โดยนำเคอร์เซอร์ไปวางเหนือโฟลเดอร์ ```contracts ``` แล้วคลิกขวาไปที่ ```New file```แล้วสร้างไฟล์ชื่อ ```TestAdoption.sol``` โดยมีโค้ดดังนี้ 
 
 ```
 pragma solidity ^0.5.16;
@@ -243,7 +243,7 @@ Compiling your contracts...
 [![1.png](https://i.postimg.cc/GpnG9Y1m/1.png)](https://postimg.cc/ZWjCMWRG)
 [![2.png](https://i.postimg.cc/gjj61H3N/2.png)](https://postimg.cc/MfkTQRPQ)
 
-รูปลักษณ์ตามที่เห็นนี้เป็นการแก้ไขไฟล์```index.html``` , ```app.js``` และ ```Kids.json``` โดยเริ่มที่ front end คือไฟล์ ```index.html```ให้เปิด Visual Studio Code ไปที่ ```src/index.html``` โดยให้มีโค้ด ดังนี้ 
+รูปลักษณ์ตามที่เห็นนี้เป็นการแก้ไขไฟล์```index.html``` , ```app.js``` และ ```Kids.json``` โดยเริ่มที่ **front end** คือไฟล์ ```index.html```ให้เปิด **Visual Studio Code** ไปที่ ```src/index.html``` โดยให้มีโค้ด ดังนี้ 
 ```<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -591,7 +591,7 @@ $(function() {
 
 [![metamask-02.png](https://i.postimg.cc/BQWKmHXc/metamask-02.png)](https://postimg.cc/jCX25W6L)
 
-- ทำการก็อปปี้ Seed จาก Ganache นำมาวางลงในช่อง Wallet Seed ตั้งพาสเวิร์ด ติ๊กที่ ```I have read and agree to the Terms of Use```แล้วคลิก ```Import```
+- ทำการก็อปปี้ **Seed** จาก **Ganache** นำมาวางลงในช่อง **Wallet Seed** จากนั้นตั้งพาสเวิร์ด แล้วติ๊กที่ ```I have read and agree to the Terms of Use```แล้วคลิก ```Import```
 [![Seed.png](https://i.postimg.cc/sX9tbp3Q/Seed.png)](https://postimg.cc/47yL9H7s)
 [![metamask-03.png](https://i.postimg.cc/SNyM0qfJ/metamask-03.png)](https://postimg.cc/c6bHYpjS)
 
@@ -613,9 +613,9 @@ $(function() {
 npm run dev
 ```
 
--จากนั้น Firefox จะเปิด web browser ขึ้นมาที่ URL  ```http://localhost:3000```
+-จากนั้น Web browser จะเปิดหน้าเว็บแอพพลิเคชั่นขึ้นมาที่ URL  ```http://localhost:3000```
 
--จะเห็นได้ว่า ก่อนที่จะมีการอุปการะ ปุ่มด้านล่างกล่องข้อมูลของเด็กแต่ละคนจะขึ้นว่า ```"รับอุปการะ"``` เป็นตัวหนังสือสีเข้มอยู่ 
+-จะเห็นได้ว่า ก่อนที่จะมีการอุปการะ ปุ่มด้านล่างกล่องข้อมูลของเด็กแต่ละคนจะขึ้นว่า ```"รับอุปการะ"``` เป็นตัวหนังสือ**สีเข้ม**อยู่ 
 
 [![before-Adopt.png](https://i.postimg.cc/RVd98xgC/before-Adopt.png)](https://postimg.cc/QHFR9wLv)
 
