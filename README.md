@@ -28,7 +28,8 @@ cd pet-shop
 ```
 truffle unbox pet-shop
 ```
-เครื่องจะทำการดาวน์โหลดไฟล์ลงมาไว้ในโฟลเดอร์ pet-shop ที่สร้างไว้ข้างต้น
+เครื่องจะทำการดาวน์โหลดไฟล์ลงมาไว้ในโฟลเดอร์ pet-shop ที่สร้างไว้ข้างต้น  เมื่อดาวน์โหลดเสร็จ จะขึ้นข้อความตามภาพ
+[![unbox.png](https://i.postimg.cc/fLdFbSSM/unbox.png)](https://postimg.cc/0M8ZWQC4)
 
 ทดลองใช้คำสั่ง ```ls -l``` เพื่อดูโครงสร้างของโปรเจ็ค สังเกตว่า มีไดเร็กทอรีและไฟล์ที่สำคัญต่อไปนี้
 
@@ -101,7 +102,7 @@ module.exports = function(deployer) {
 ```
 truffle migrate
 ```
-หาก migrate ผ่าน จะปรากฎข้อความลักษณะดังกล่าว ซึ่งเป็นการอ่าน ไฟล์ ```Adoption.sol,1_initial_migration.js``` และ ```2_deploy_contracts.js```ซึ่งระบบจะนำข้อมูลไปไว้บนบล็อคเชน และคำนวณค่า gas ซึ่งมีหน่วยเป็น wei 
+หาก migrate ผ่าน จะปรากฎข้อความลักษณะดังกล่าว ซึ่งเป็นการอ่าน ไฟล์ ```Adoption.sol,1_initial_migration.js``` และ ```2_deploy_contracts.js```ซึ่งระบบจะนำข้อมูลไปไว้บนบล็อคเชน และคำนวณค่า gas ซึ่งมีหน่วยเป็น Wei ,Gwei และ Ether ตามลำดับ
 ```
 Compiling your contracts...
 ===========================
@@ -578,7 +579,7 @@ $(function() {
   ```
 ## 5. ติดตั้ง MetaMask
 - ดาวน์โหลดและติดตั้ง MetaMask ที่บราวเซอร์ Firefox
-- เมื่อเริ่มใช้งาน MetaMask จะได้ดังรูป 
+- เมื่อเริ่มใช้งาน MetaMask จะเข้าสู่หน้าแรก ตามภาพ 
 
 [![metamask-01.png](https://i.postimg.cc/gJr5Jfpp/metamask-01.png)](https://postimg.cc/0MRZXXrX)
 
@@ -602,7 +603,7 @@ $(function() {
 
 ## 5. การทำงานของโปรแกรม 
 
-ให้รัน Backend โดยใช้คำสั่งใน terminal ดังนี้ 
+ให้รันโปรแกรม โดยใช้คำสั่งใน terminal ดังนี้ 
 
 ```
 npm run dev
