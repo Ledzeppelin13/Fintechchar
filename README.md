@@ -213,25 +213,24 @@ contract TestAdoption {
 truffle test
 ```
 
-หากผลการทดสอบผ่านทั้ง 3 กรณีจะได้ผลลัพธ์ดังรูปต่อไปนี้
+ที่หน้าจอของ Terminal จะขึ้นข้อความตามด้านล่าง หรือคล้ายกัน
 
 ```
-   Using network 'development'.
-
-   Compiling your contracts...
-   ===========================
-   > Compiling ./test/TestAdoption.sol
-   > Artifacts written to /var/folders/z3/v0sd04ys11q2sh8tq38mz30c0000gn/T/test-11934-19747-g49sra.0ncrr
-   > Compiled successfully using:
-      - solc: 0.5.0+commit.1d4f565a.Emscripten.clang
-
-     TestAdoption
-       ✓ testUserCanAdoptKidt (91ms)
-       ✓ testGetAdopterAddressByKidId (70ms)
-       ✓ testGetAdopterAddressByKidIdInArray (89ms)
+ PS C:\Users\Account\pet-shop> truffle test
+Using network 'development'.
 
 
-     3 passing (670ms)
+Compiling your contracts...
+===========================
+> Compiling .\contracts\Adoption.sol
+> Compiling .\contracts\TestAdoption.sol
+> Artifacts written to C:\Users\Account\AppData\Local\Temp\test--44844-yY4cgjNa3zlN
+> Compiled successfully using:
+   - solc: 0.5.16+commit.9c3226ce.Emscripten.clang
+
+
+
+  0 passing (0ms)
 ```
 
 
