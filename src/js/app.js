@@ -3,7 +3,7 @@ App = {
   contracts: {},
 
   init: async function() {
-    // Load pets.
+    // Load kidss.
     $.getJSON('../Kids.json', function(data) {
       var kidsRow = $('#kidsRow');
       var kidTemplate = $('#kidTemplate');
@@ -57,7 +57,7 @@ App = {
       // Set the provider for our contract
       App.contracts.Adoption.setProvider(App.web3Provider);
 
-      // Use our contract to retrieve and mark the adopted pets
+      // Use our contract to retrieve and mark the adopted kids
       return App.markAdopted();
     });
     return App.bindEvents();
