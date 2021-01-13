@@ -327,7 +327,13 @@ Compiling your contracts...
   </body>
 </html>
 ```
+[![indexhtml1.png](https://i.postimg.cc/pLN2z7wp/indexhtml1.png)](https://postimg.cc/tY5QHrCj)
 
+จากโค้ด บรรทัดที่ 20-41  เป็นการปรับแต่งพื้นหลัง สร้างกรอบข้อความรอบชื่อมูลนิธิ และใช้สีของตัวหนังสือที่ต่างๆ กันไป 
+
+[![indexhtml2.png](https://i.postimg.cc/G2ZcK547/indexhtml2.png)](https://postimg.cc/LY3K6vBL)
+
+จากโค้ดบรรทัดที่ 47-59 เดิมเป็นการสร้างเทมเพลตเบื้องต้นจากต้นฉบับ(แสดงข้อมูลของสุนัข )ในที่นี้เราดัดแปลงมาเป็นการรับอุปการะเด็ก  โดยเปลี่ยนข้อความเป็นภาษาไทยตามภาพ ทั้งหัวข้อ เชื้อชาติ  อายุ สถานที่ และชื่อปุ่ม 
 
 ## 4. สร้าง Backend ที่สามารถเชื่อมต่อกับ Smart Contract
 #### 4.1 ให้แก้ไขไฟล์ ```src/js/app.js``` ใน visual studio code ให้มีโค้ดดังนี้
