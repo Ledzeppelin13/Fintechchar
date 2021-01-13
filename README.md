@@ -463,6 +463,15 @@ $(function() {
 
 
 ```
+[![appjs1.png](https://i.postimg.cc/4N015vPK/appjs1.png)](https://postimg.cc/gnvRcZfd)
+
+บรรทัดที่ 7-19  เป็นการดึงข้อมูลจาก Kids.json ซึ่งบรรจุข้อมูลของเด็กทั้ง 16 คน มาใช้ในฟังก์ชั่น For loop ซึ่งสั่งให้โปรแกรมค้นหาข้อมูลเรียงตาม kidId ตั้งแต่คนแรกคือ id 0 จนถึง id 15 แล้วนำไปแสดงผลเชื่อมกับ kidTemplate ซึ่งเป็นเทมเพลตที่สร้างไว้ใน index.html
+
+[![appjs2.png](https://i.postimg.cc/nhkvC6rt/appjs2.png)](https://postimg.cc/sMMBLH5n)
+
+บรรทัดที่ 26-46 เป็นการระบุว่าจะใช้ web3 (บล็อกเชน) แบบใดในการเชื่อมต่อกับ smart contract โดยเริ่มจาก Metamask ,Legacy browser และ Ganache ตามลำดับ หากต้องการใช้เฉพาะอันใดอันหนึ่งก็ให้ทำการ comment บรรทัดที่เหลือ  
+
+
 ### 4.2 สร้างไฟล์ .json ซึ่งเป็นฐานข้อมูลของเด็กกำพร้าทั้ง 16 คน 
 ---------
 โดยไปที่โฟลเดอร์ ```src``` แล้วสร้าง  ```New file``` ชื่อ ```Kids.json``` โดยให้มีโค้ด ดังต่อไปนี้
