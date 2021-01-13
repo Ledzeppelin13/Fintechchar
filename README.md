@@ -325,29 +325,7 @@ Compiling your contracts...
   </body>
 </html>
 ```
-**จากโค้ดด้านบน มีจุดสำคัญที่แตกต่างจาก Pet-shop ดังนี้
-- เปลี่ยนชื่อร้าน ในโค้ด** <title>มูลนิธิศูนย์เด็กกำพร้าชาลีมิตร</title> 
-- **เพิ่มลายฉากหลัง** <body background="https://www.muralswallpaper.co.uk/app/uploads/watercolour-polka-dot-room-825x535.jpg"> 
-- **เพิ่มกรอบ,สีสันและข้อความเบอร์ติดต่อ ตามโค้ด**           
-   style="font-size: 60px; 
-                color: rgb(26, 20, 114);
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                border: 10px rgb(218, 4, 4); 
-                border-style: double; 
-                background-color: white;" 
-          class="text-center">
-            <b>มูลนิธิศูนย์เด็กกำพร้าชาลีมิตร</b></h1>
-          <hr/>
-          <p style="font-size: 30px; 
-          color: rgb(70, 121, 12);
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-          border: 10px rgb(218, 4, 4); 
-          background-color: white;" >เบอร์ติดต่อ : 02-657-3741</p>
-- **เปลี่ยนชื่อหัวข้อ เป็นภาษาไทยตามโค้ด**
-            <strong>เชื้อชาติ</strong>: <span class="pet-breed">Golden Retriever</span><br/>
-            <strong>อายุ</strong>: <span class="pet-age">3</span><br/>
-            <strong>ที่อยู่ศูนย์กำพร้า</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
-            <button class="btn btn-default btn-adopt" type="button" data-id="0">รับอุปการะ</button>
+
 
 ## 4. สร้าง Backend ที่สามารถเชื่อมต่อกับ Smart Contract
 #### 4.1 ให้แก้ไขไฟล์ ```src/js/app.js``` ใน visual studio code ให้มีโค้ดดังนี้
