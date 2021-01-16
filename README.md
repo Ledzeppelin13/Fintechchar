@@ -12,13 +12,13 @@
 ## สรุปการทำงานของโปรเจคต์
 โปรเจคต์นี้ สรุปได้ว่า เราใช้ Smart contract ที่เขียนโดยภาษา Solidity ซึ่งเรา deploy บนบล็อกเชนส่วนบุคคล Ganache/Metamask ไปเชื่อมต่อกับ Front-end และ back-end  ซึ่งจะมีไฟล์ที่สำคัญดังต่อไปนี้ 
 
-  1.Adoption.sol
+  **1.Adoption.sol**
   
-  2.index.html
+  **2.index.html**
   
-  3.app.js
+  **3.app.js**
   
-  4.Kids.json 
+  **4.Kids.json **
 
 ## 1. กำหนดค่าสิ่งแวดล้อมของโปรเจคต์
 - การสร้างโฟลเดอร์สำหรับบันทึกโปรเจ็คนี้ เนื่องจากนำต้นฉบับมาจาก [Pet Shop tutorial](http://truffleframework.com/tutorials/pet-shop) เพื่อเป็นการป้องกันความผิดพลาดในการบันทึกไฟล์ จึงใช้ชื่อ **pet-shop** เหมือนกับที่ Truffle ตั้งไว้ โดยเปิด Terminal ขึ้นมาและใช้คำสั่งดังต่อไปนี้
