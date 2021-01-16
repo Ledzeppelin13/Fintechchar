@@ -13,7 +13,7 @@
         
 
 ## 1. กำหนดค่าสิ่งแวดล้อมของโปรเจคต์
-- การสร้างไดเร็กทอรีสำหรับบันทึกโปรเจ็คนี้ เนื่องจากนำต้นฉบับมาจาก [Pet Shop tutorial](http://truffleframework.com/tutorials/pet-shop) เพื่อเป็นการป้องกันความผิดพลาดในการบันทึกไฟล์ จึงใช้ชื่อ **pet-shop** เหมือนกับที่ Truffle ตั้งไว้ โดยเปิด Terminal ขึ้นมาและใช้คำสั่งดังต่อไปนี้
+- การสร้างโฟลเดอร์สำหรับบันทึกโปรเจ็คนี้ เนื่องจากนำต้นฉบับมาจาก [Pet Shop tutorial](http://truffleframework.com/tutorials/pet-shop) เพื่อเป็นการป้องกันความผิดพลาดในการบันทึกไฟล์ จึงใช้ชื่อ **pet-shop** เหมือนกับที่ Truffle ตั้งไว้ โดยเปิด Terminal ขึ้นมาและใช้คำสั่งดังต่อไปนี้
 
 ```
 mkdir pet-shop
@@ -29,12 +29,12 @@ truffle unbox pet-shop
 
 [![unbox.png](https://i.postimg.cc/fLdFbSSM/unbox.png)](https://postimg.cc/0M8ZWQC4)
 
-ทดลองใช้คำสั่ง ```ls -l``` เพื่อดูโครงสร้างของโปรเจ็ค สังเกตว่า มีไดเร็กทอรีและไฟล์ที่สำคัญต่อไปนี้
+ทดลองใช้คำสั่ง ```ls -l``` เพื่อดูโครงสร้างของโปรเจ็ค ซึ่งจะมีโฟลเดอร์และไฟล์ที่สำคัญต่อไปนี้
 
-- contracts: เป็นไดเร็กทอรีที่ใช้เก็บ Smart Contracts ที่เขียนด้วยภาษา _**Solidity**_
-- migrations: เป็นไดเร็กทอรีที่ใช้เก็บไฟล์ JavaScript ซึ่งเป็นโค้ดที่ใช้ในการจัดการ Smart Contracts ให้ลงไปยังบล็อกเชน
-- src: เป็นไดเร็กทอรีที่ใช้เก็บไฟล์ที่เกี่ยวข้องกับ Web Application เช่น JavaScript, CSS, HTML, images เป็นต้น
-- test: เป็นไดเร็กทอรีใช้ที่เก็บไฟล์ Solidity หรือ JavaScript ก็ได้ ที่ใช้เพื่อทดสอบ Smart Contracts
+- contracts: เป็นโฟลเดอร์ที่ใช้เก็บ Smart Contracts ที่เขียนด้วยภาษา _**Solidity**_
+- migrations: เป็นโฟลเดอร์ที่ใช้เก็บไฟล์ JavaScript ซึ่งเป็นโค้ดที่ใช้ในการจัดการ Smart Contracts ให้ลงไปยังบล็อกเชน
+- src: เป็นโฟลเดอร์ที่ใช้เก็บไฟล์ที่เกี่ยวข้องกับ Web Application เช่น JavaScript, CSS, HTML, images เป็นต้น
+- test: เป็นโฟลเดอร์ใช้ที่เก็บไฟล์ Solidity หรือ JavaScript ก็ได้ ที่ใช้เพื่อทดสอบ Smart Contracts
 - truffle-config.js: คือไฟล์ที่ใช้ในการกำหนดค่าของโปรเจ็ค
 
 1.2 ที่ Visual studio code ให้เปิดโฟลเดอร์ที่เก็บไฟล์ที่ดาวน์โหลดจาก truffle framework โดยไปที่ ```File/open folder/pet-shop``` จากนั้นกด ```Select folder``` โฟลเดอร์ต่างๆ จะปรากฎที่ ``` Explorer``` ตามภาพ  
@@ -69,7 +69,7 @@ contract Adoption {
 
 ### 2.2 compile 
 ---------
-ลำดับต่อไปให้ทำการคอมไฟล์ Smart Contracts เพื่อให้เป็นภาษาที่เครื่องเข้าใจ โดยใช้คำสั่งใน terminal ดังนี้
+ลำดับต่อไปให้ทำการคอมไฟล์ Smart Contract เพื่อให้เป็นภาษาที่เครื่องเข้าใจ โดยใช้คำสั่งใน terminal ดังนี้
 
 ```
 truffle compile
