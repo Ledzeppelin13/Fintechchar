@@ -33,19 +33,19 @@ cd pet-shop
 ```
 truffle unbox pet-shop
 ```
-เครื่องจะทำการดาวน์โหลดไฟล์ลงมาไว้ในโฟลเดอร์ pet-shop ที่สร้างไว้ข้างต้น  เมื่อดาวน์โหลดเสร็จ จะขึ้นข้อความตามภาพ
+เครื่องจะทำการดาวน์โหลดไฟล์ลงมาไว้ในโฟลเดอร์ **pet-shop** ที่สร้างไว้ข้างต้น  เมื่อดาวน์โหลดเสร็จ จะขึ้นข้อความตามภาพ
 
 [![unbox.png](https://i.postimg.cc/fLdFbSSM/unbox.png)](https://postimg.cc/0M8ZWQC4)
 
 ทดลองใช้คำสั่ง ```ls -l``` เพื่อดูโครงสร้างของโปรเจ็ค ซึ่งจะมีโฟลเดอร์และไฟล์ที่สำคัญต่อไปนี้
 
-- contracts: เป็นโฟลเดอร์ที่ใช้เก็บ Smart Contracts ที่เขียนด้วยภาษา _**Solidity**_
-- migrations: เป็นโฟลเดอร์ที่ใช้เก็บไฟล์ JavaScript ซึ่งเป็นโค้ดที่ใช้ในการจัดการ Smart Contracts ให้ลงไปยังบล็อกเชน
-- src: เป็นโฟลเดอร์ที่ใช้เก็บไฟล์ที่เกี่ยวข้องกับ Web Application เช่น JavaScript, CSS, HTML, images เป็นต้น
-- test: เป็นโฟลเดอร์ใช้ที่เก็บไฟล์ Solidity หรือ JavaScript ก็ได้ ที่ใช้เพื่อทดสอบ Smart Contracts
-- truffle-config.js: คือไฟล์ที่ใช้ในการกำหนดค่าของโปรเจ็ค
+- **contracts:** เป็นโฟลเดอร์ที่ใช้เก็บ Smart Contracts ที่เขียนด้วยภาษา _**Solidity**_
+- **migrations:** เป็นโฟลเดอร์ที่ใช้เก็บไฟล์ JavaScript ซึ่งเป็นโค้ดที่ใช้ในการจัดการ Smart Contracts ให้ลงไปยังบล็อกเชน
+- **src:** เป็นโฟลเดอร์ที่ใช้เก็บไฟล์ที่เกี่ยวข้องกับ Web Application เช่น JavaScript, CSS, HTML, images เป็นต้น
+- **test:** เป็นโฟลเดอร์ใช้ที่เก็บไฟล์ Solidity หรือ JavaScript ก็ได้ ที่ใช้เพื่อทดสอบ Smart Contracts
+- **truffle-config.js:** คือไฟล์ที่ใช้ในการกำหนดค่าของโปรเจ็คต์
 
-1.2 ที่ Visual studio code ให้เปิดโฟลเดอร์ที่เก็บไฟล์ที่ดาวน์โหลดจาก truffle framework โดยไปที่ ```File/open folder/pet-shop``` จากนั้นกด ```Select folder``` โฟลเดอร์ต่างๆ จะปรากฎที่ ``` Explorer``` ตามภาพ  
+1.2 ที่ Visual studio code ให้เปิดโฟลเดอร์ที่เก็บไฟล์ที่ดาวน์โหลดจาก **truffle framework** โดยไปที่ ```File/open folder/pet-shop``` จากนั้นกด ```Select folder``` โฟลเดอร์ต่างๆ จะปรากฎที่ ``` Explorer``` ตามภาพ  
 
 [![Openfolder.png](https://i.postimg.cc/Kj2HN4LG/Openfolder.png)](https://postimg.cc/Q9fmN80w)
 
